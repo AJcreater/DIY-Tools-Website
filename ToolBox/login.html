@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./src/css/Style.css">
+    <link rel="stylesheet" href="./src/css/media-query.css">
+
+</head>
+<body>
+
+    <div class="nav-Box">
+            <div class="logo">
+                <a href="Index.html"><img src="./asset/nav-list/Logo1.png" alt="Logo" class="icons2"></a>
+                </div>
+    </div>
+
+    <div class="auth-container">
+        
+        <!-- Login Form -->
+        <div class="form-box" id="login-box">
+            <h1>Tool<span>Box</span></h1>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <div class="error-message" id="login-error"></div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="toggle-form">
+                <p>Don't have an account? <a href="#" onclick="showRegistration()">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-box" id="registration-box" style="display:none;">
+            <h1>Tool<span>Box</span></h1>
+            <h2>Register</h2>
+            <form id="registration-form">
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="email" id="reg-email" placeholder="Email" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+                <div class="error-message" id="reg-error"></div>
+                <button type="submit">Register</button>
+            </form>
+            <div class="toggle-form">
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="./src/script.js"></script>
+
+</body>
+</html>
